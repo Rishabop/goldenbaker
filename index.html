@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,12 +40,13 @@
             position: sticky;
             top: 0;
             background: var(--white);
-            padding: 1rem 1.5rem;
+            padding: 0.8rem 1rem;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             z-index: 100;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
+            gap: 0.6rem;
             border-bottom: 2px solid var(--primary-gold);
         }
 
@@ -64,6 +65,9 @@
             display: flex;
             gap: 0.3rem;
             list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
         }
 
         .nav-links button {
